@@ -5,7 +5,7 @@ module ZipCodes
 
   class << self
     def identify(code)
-      db[code]
+      db[code.to_s]
     end
 
     def db
